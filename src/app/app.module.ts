@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
 import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { SharedModule } from './shared/shared.module';
+import { NotlazyComponent } from './notlazy/notlazy/notlazy.component';
+import { NotlazyModule } from './notlazy/notlazy.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,8 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
     TutorialsListComponent
   ],
   imports: [
+    NotlazyModule,
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
